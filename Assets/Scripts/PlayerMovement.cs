@@ -6,7 +6,11 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour {
 
-    private Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
+    #region Changes made
+    //put a new in rigid body by Syed Shaazib Tanvir(GameMaker46)
+    #endregion
+
 
     //variables that are goint to be updated 
     [SerializeField]
