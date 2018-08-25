@@ -28,11 +28,5 @@ public class SplashScreen : MonoBehaviour {
 	void Update () {
         logoColor = Color.Lerp(logoColor, new Color(1, 1, 1, 1), Time.time * lerpMultiplier);
         logo.color = logoColor;
-        StartCoroutine(WaitFor3());
 	}
-
-    IEnumerator WaitFor3()
-    {
-        yield return new WaitForSeconds(3f);
-    }
 }
